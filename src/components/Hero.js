@@ -14,7 +14,7 @@ function Hero() {
       {/* This div is to align everything in center, do not remove */}
       <div>
         <div class="flex flex-wrap">
-          <h1 class="text-5xl  max-w-[985px]">
+          <h1 class="text-5xl py-5 max-w-[985px]">
             <span class="font-bold">All-in-one platform</span> to enhance
             teaching. Empower your usual classes with
           </h1>
