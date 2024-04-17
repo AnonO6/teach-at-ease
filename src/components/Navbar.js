@@ -5,9 +5,9 @@ import logo from "@/app/favicon.ico";
 import downArrow from "../../public/icons/downArrow.svg";
 const Navbar = () => {
   return (
-    <div className="my-4 mx-2 flex ">
-      <div className="flex ">
-        <h1 className="w-24 font-bold mr-4">TEACH@EASE</h1>
+    <div class="my-4 mx-2 flex ">
+      <div class="flex ">
+        <h1 class="w-24 font-bold mr-4">TEACH@EASE</h1>
         <Image
           src={logo}
           width={30}
@@ -16,9 +16,9 @@ const Navbar = () => {
           className="ml-2 -mt-1"
         />
       </div>
-      <div className="ml-4 flex justify-between w-full">
-        <ul className="flex justify-evenly w-80">
-          <li className="flex">
+      <div class="ml-4 flex justify-between w-full">
+        <ul class="flex justify-evenly w-80">
+          <li class="flex">
             Features
             <Image
               src={downArrow}
@@ -31,7 +31,7 @@ const Navbar = () => {
           <li>Subscription</li>
           <li>Contact us</li>
         </ul>
-        <ul className="flex justify-between w-80">
+        <ul class="flex justify-between w-80">
           <li>Join Class</li>
           <li>Log in</li>
           <li>
