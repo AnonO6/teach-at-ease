@@ -8,7 +8,27 @@ import doubtIcon from "../../public/icons/doubtIcon.svg";
 import quizIcon from "../../public/icons/quizIcon.svg";
 import codeEditorIcon from "../../public/icons/codeEditorIcon.svg";
 import reviewGrid from "../../public/reviewGrid.svg";
+import { v4 as uuidv4 } from 'uuid';
+import { useRouter } from 'next/navigation'
+
+import { useState } from 'react';
+
 function Hero() {
+  const router = useRouter()
+  const [roomId, setRoomId] = useState('')
+
+  const createAndJoin = () => {
+    const roomId = uuidv4()
+    router.push(`/${roomId}`)
+  }
+
+  const joinRoom = () => {
+    if (roomId) router.push(`/${roomId}`)
+    else {
+      const roomId = uuidv4()
+      router.push(`/${roomId}`)
+    }
+  }
   return (
     <div class="flex justify-center my-10 mx-5">
       {/* This div is to align everything in center, do not remove */}
@@ -18,7 +38,7 @@ function Hero() {
             <span class="font-bold">All-in-one platform</span> to enhance
             teaching. Empower your usual classes with
           </h1>
-          <button class="bg-black w-44 h-16 mt-7 border-2 shrink-0 border-black text-white hover:bg-white hover:text-black font-medium text-2xl rounded-full">
+          <button class="bg-black w-44 h-16 mt-7 border-2 shrink-0 border-black text-white hover:bg-white hover:text-black font-medium text-2xl rounded-full" onClick={joinRoom}>
             Start Class
           </button>
         </div>
