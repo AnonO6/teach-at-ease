@@ -18,7 +18,11 @@ function Feature() {
       />
       {featureContent.map((item, index) => {
         return (
-          <div class="px-20 py-14" style={{ backgroundColor: item.color }}>
+          <div
+            class="px-20 py-14"
+            style={{ backgroundColor: item.color }}
+            id={index}
+          >
             <h1 class="text-5xl my-3">{item.title}</h1>
             <div class="flex">
               <div class="p-3">
