@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         meetbg: "url('/meetbg.svg')",
+        meetBg: "url('/meetBg.png')",
       },
       colors: {
         border: "hsl(var(--border))",
